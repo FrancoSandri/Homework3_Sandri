@@ -54,7 +54,7 @@
 
 1. Cambiar el directorio:
    ```sh
-   cd ej1
+   cd ej3
    ```
 
 2. Compilar el código:
