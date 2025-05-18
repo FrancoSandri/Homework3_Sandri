@@ -17,20 +17,8 @@ class Punto {
         void setY(float y);
         float getX() const;
         float getY() const;
+        ~Punto() = default;
 };
-
-/*2. Escriba el código para las clases que representan:
-a. Un punto, con su posición (x, y) y los correspondientes setters y getters.
-b. Un círculo, con su posición, radio (r) y los correspondientes setters y getters.
-c. Una elipse, con la posición de su centro, el semieje mayor (a), el semieje menor
-(b) y los correspondientes setters y getters.
-d. Un rectángulo, con la posición de su vértice izquierdo inferior, su ancho, su largo
-y los correspondientes métodos setters y getters.
-Cree una clase adicional denominada ProcesadorFigura que utilice especialización de
-plantilla para calcular el área de las figuras.
-Escriba el código en el main que permita ejemplificar como calcular el área de cada una
-de las figuras mencionadas.
-*/
 
 class Circulo {
     private:
@@ -42,6 +30,7 @@ class Circulo {
         void setRadio(float radio);
         Punto getCentro() const;
         float getRadio() const;
+        ~Circulo() = default;
 };
 
 class Elipse {
@@ -57,6 +46,7 @@ class Elipse {
         Punto getCentro () const;
         float getSemiejeMayor() const;
         float getSemiejeMenor() const;
+        ~Elipse() = default;
 };
 
 class Rectangulo {
@@ -72,6 +62,7 @@ class Rectangulo {
         Punto getVerticeIzquierdoInferior() const;
         float getAncho() const;
         float getLargo() const;
+        ~Rectangulo() = default;
 };
 
 class ProcesadorFigura{
