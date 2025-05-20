@@ -65,9 +65,6 @@ class Rectangulo {
         ~Rectangulo() = default;
 };
 
-/*ProcesadorFigura que utilice especialización de
-plantilla para calcular el área de las figuras.*/
-
 template <typename T>
 class ProcesadorFigura{
     public:
