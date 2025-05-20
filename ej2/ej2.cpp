@@ -91,6 +91,7 @@ float Rectangulo::getLargo() const{
 }
 
 int main() {
+
     // Crear puntos
     Punto p1(1.0f, 2.0f);
     cout << "Punto inicial: (" << p1.getX() << ", " << p1.getY() << ")\n";
@@ -98,13 +99,17 @@ int main() {
     p1.setY(4.0f);
     cout << "Punto modificado: (" << p1.getX() << ", " << p1.getY() << ")\n";
 
+    ProcesadorFigura<Circulo> c1;
+    ProcesadorFigura<Elipse> e1;
+    ProcesadorFigura<Rectangulo> r1;
+
     // Probar Circulo
     Circulo c(p1, 5.0f);
     cout << "\nCentro del círculo: (" << c.getCentro().getX() << ", " << c.getCentro().getY() << ")\n";
     cout << "Radio del círculo: " << c.getRadio() << "\n";
     c.setRadio(10.0f);
     cout << "Nuevo radio del círculo: " << c.getRadio() << "\n";
-    cout << "Área del círculo: " << ProcesadorFigura::calcularArea(c) << "\n";
+    cout << "Área del círculo: " << c1.calcular_area(c) << "\n";
 
     // Probar Elipse
     Elipse e(p1, 4.0f, 2.0f);
@@ -113,7 +118,7 @@ int main() {
     cout << "Semieje menor: " << e.getSemiejeMenor() << "\n";
     e.setSemiejeMayor(6.0f);
     e.setSemiejeMenor(3.0f);
-    cout << "Área de la elipse: " << ProcesadorFigura::calcularArea(e) << "\n";
+    cout << "Área de la elipse: " << e1.calcular_area(e) << "\n";
 
     // Probar Rectángulo
     Rectangulo r(p1, 8.0f, 5.0f);
@@ -122,7 +127,7 @@ int main() {
     cout << "Largo: " << r.getLargo() << "\n";
     r.setAncho(10.0f);
     r.setLargo(6.0f);
-    cout << "Área del rectángulo: " << ProcesadorFigura::calcularArea(r) << "\n";
+    cout << "Área del rectángulo: " << r1.calcular_area(r) << "\n";
 
     return 0;
 }
