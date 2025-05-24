@@ -15,7 +15,7 @@
    ```
 3. Ejecutar el programa:
    ```sh
-   ./main.exe
+   ./main
    ```
 4. Borrar los archivos creados al compilar:
     ```sh
@@ -39,7 +39,7 @@
    ```
 3. Ejecutar el programa:
    ```sh
-   ./main.exe
+   ./main
    ```
 4. Borrar los archivos creados al compilar:
     ```sh
@@ -63,7 +63,7 @@
    ```
 3. Ejecutar el programa:
    ```sh
-   ./main.exe
+   ./main
    ```
 4. Borrar los archivos creados al compilar:
     ```sh
