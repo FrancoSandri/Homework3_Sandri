@@ -16,6 +16,7 @@ run: $(TARGET)
 
 valgrind: $(TARGET)
 	valgrind --leak-check=full --show-leak-kinds=all ./$(TARGET)
+	make clean
 
 clean:
 	rm -f $(TARGET) *.o $(SRC_DIR)/*.o
